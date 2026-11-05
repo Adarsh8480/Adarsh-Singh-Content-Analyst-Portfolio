@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adarsh Singh — Research and Content Analyst portfolio. Web research, information verification, data quality and documentation.">
+<title>Adarsh Singh | Research & Content Analyst</title>
+<style>
+:root{--blue:#1457f5;--blue2:#3677ff;--ink:#111827;--muted:#536176;--line:#e3e8f0;--soft:#f5f8fc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.container{width:min(1240px,calc(100% - 48px));margin:auto}
+header{height:66px;position:sticky;top:0;z-index:10;background:#ffffffed;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-size:23px;font-weight:800;letter-spacing:-1.1px;white-space:nowrap}.brand:before{content:"";display:inline-block;width:12px;height:25px;background:var(--blue);transform:skew(-28deg);margin-right:13px;vertical-align:-4px}
+nav{display:flex;align-items:center;gap:clamp(12px,2.2vw,30px);font-size:13px;font-weight:700}nav a:hover{color:var(--blue)}.nav-cta{background:var(--blue);color:#fff;padding:10px 15px;border-radius:8px}
+.hero{position:relative;overflow:hidden;padding:66px 0 34px;min-height:360px}.hero:before{content:"";position:absolute;right:8%;top:-170px;width:300px;height:500px;transform:skew(-30deg);background:linear-gradient(160deg,#0c43d8 10%,#2878ff 68%,#dceaff);opacity:.96}.hero:after{content:"";position:absolute;right:-20px;top:210px;width:180px;height:120px;transform:skew(28deg);background:linear-gradient(110deg,#d7e6ff,#2b70ff)}
+.hero-content{position:relative;z-index:1;max-width:760px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:#35445b}.hero h1{font-size:clamp(38px,5vw,58px);line-height:1.08;letter-spacing:-2.6px;margin:13px 0 15px;max-width:720px}.hero h1 span{color:var(--blue)}.hero p{font-size:17px;color:#344258;max-width:670px;margin:0}.actions{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--ink);border-radius:9px;padding:12px 20px;font-size:14px;font-weight:800;transition:transform .2s,background .2s}.btn.primary{background:#56ddc3;border-color:#56ddc3;color:#10233c}.btn.secondary{background:#fff;color:#111827}.btn:hover{transform:translateY(-2px)}
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#f5f8fc;border-radius:13px;padding:16px 10px;margin:0 auto 22px}.highlight{display:flex;gap:12px;align-items:flex-start;padding:6px 16px;border-right:1px solid #dce4ef}.highlight:last-child{border:0}.ico{flex:0 0 42px;width:42px;height:42px;border-radius:10px;background:#e9f0ff;color:var(--blue);display:grid;place-items:center;font-size:19px;font-weight:800}.highlight b{display:block;font-size:14px;line-height:1.3}.highlight small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.main-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:24px;margin:22px 0}.panel{border:1px solid var(--line);border-radius:13px;padding:21px;background:#fff}.panel h2,.section-title{font-size:24px;letter-spacing:-.8px;margin:0 0 15px}.timeline{border-left:2px solid #dce5f1;margin:0 0 0 8px;padding-left:22px}.entry{position:relative;margin:0 0 22px}.entry:last-child{margin-bottom:0}.entry:before{content:"";position:absolute;left:-28px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px #e8efff}.entry h3{font-size:16px;margin:0 0 2px}.meta{font-size:12px;color:#536176;margin-bottom:6px}.entry ul{margin:6px 0 0;padding-left:17px;color:#344258;font-size:12.5px}.entry li{margin:3px 0}
+.project{display:flex;gap:12px;margin:0 0 18px}.project:last-child{margin:0}.project .ico{width:42px;height:42px}.project h3{font-size:15px;margin:0 0 3px}.project p{font-size:12.5px;color:#46546a;margin:0}.edu{border-top:1px solid var(--line);padding-top:13px;margin-top:13px}.edu b{display:block;font-size:13px}.edu span{font-size:12px;color:var(--muted)}
+section.content{padding:27px 0}.skills-wrap{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0 20px}.skills-wrap h2{font-size:22px;margin:0 0 12px;letter-spacing:-.5px}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{background:#edf1f7;color:#29374d;border-radius:7px;padding:6px 12px;font-size:12px;font-weight:650}
+.lower{display:grid;grid-template-columns:1fr 1fr;gap:24px}.mini-panel{padding:20px 0;border-bottom:1px solid var(--line)}.mini-panel h3{font-size:16px;margin:0 0 6px}.mini-panel p{font-size:12.5px;color:var(--muted);margin:0}
+.contact{background:#111315;color:#fff;padding:28px 0 32px;margin-top:10px}.contact-row{display:grid;grid-template-columns:1fr 1.2fr 2.3fr;align-items:center;gap:22px}.contact-title{font-size:28px;font-weight:850;letter-spacing:-1px;color:#fff}.contact-title:before{content:"";display:inline-block;width:11px;height:28px;background:var(--blue);transform:skew(-28deg);margin-right:14px;vertical-align:-5px}.contact-copy{font-size:13px;color:#c7cbd2}.links{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.contact-link{display:inline-flex;align-items:center;gap:8px;border:1px solid #74777c;border-radius:8px;padding:11px 14px;color:#fff;font-size:12px;font-weight:750;white-space:nowrap}.contact-link:hover{border-color:#fff;background:#22262b}.contact-link.phone{color:#fff}
+footer{background:#111315;border-top:1px solid #34383d;padding:12px 0;color:#aeb4bd;font-size:11px}
+@media(max-width:900px){.hero:before{right:-5%;opacity:.25}.hero:after{display:none}.highlights{grid-template-columns:repeat(2,1fr)}.highlight:nth-child(2){border-right:0}.highlight:nth-child(-n+2){border-bottom:1px solid #dce4ef}.main-grid{grid-template-columns:1fr}.contact-row{grid-template-columns:1fr}.links{justify-content:flex-start}}
+@media(max-width:620px){.container{width:calc(100% - 28px)}header{height:auto}.nav{padding:13px 0;align-items:flex-start;flex-direction:column}nav{width:100%;overflow:auto;padding-bottom:3px;gap:18px}.nav-cta{display:none}.hero{padding:48px 0 28px}.hero h1{letter-spacing:-1.7px}.hero p{font-size:15px}.highlights{grid-template-columns:1fr;padding:8px}.highlight{border-right:0;border-bottom:1px solid #dce4ef!important;padding:12px}.highlight:last-child{border-bottom:0!important}.lower{grid-template-columns:1fr}.panel{padding:17px}.contact-title{font-size:22px}.links{justify-content:flex-start}.contact-link{white-space:normal}}
+@media print{header,.actions{display:none}.hero{min-height:auto;padding:30px 0}.hero:before,.hero:after{display:none}section.content{padding:10px 0}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#top">Adarsh Singh</a>
+<nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="Adarsh_Kumar_Singh_Resume.pdf" download>↓ Download Resume</a>
+</div></header>
+<main id="top">
+<section class="hero" id="about"><div class="container"><div class="hero-content">
+<div class="eyebrow">Research&nbsp; / &nbsp;Content&nbsp; / &nbsp;Data Quality</div>
+<h1>Turning information into reliable, actionable <span>insights.</span></h1>
+<p>Computer Science graduate with experience in web research, data collection, information verification, and documentation. Skilled at finding, organizing, and validating information to support high-quality content and business decision-making.</p>
+<div class="actions"><a class="btn primary" href="#contact">Contact me</a><a class="btn secondary" href="#experience">Explore my experience</a></div>
+</div></div></section>
+<div class="container">
+<div class="highlights">
+<div class="highlight"><div class="ico">⌕</div><div><b>Research & Source Discovery</b><small>Find and evaluate relevant, high-quality information from online sources</small></div></div>
+<div class="highlight"><div class="ico">▱</div><div><b>Data Quality & Verification</b><small>Review, cross-check, and maintain accurate and reliable data</small></div></div>
+<div class="highlight"><div class="ico">▤</div><div><b>Documentation & Reporting</b><small>Create clear, structured summaries and status updates</small></div></div>
+<div class="highlight"><div class="ico">♧</div><div><b>Stakeholder Collaboration</b><small>Work with internal teams to resolve issues and support timely delivery</small></div></div>
+</div>
+<div class="main-grid">
+<section class="panel" id="experience"><h2>Work Experience</h2><div class="timeline">
+<div class="entry"><h3>Trainee US IT Recruiter</h3><div class="meta">Zodiac Solutions &nbsp; | &nbsp; Gurgaon &nbsp; | &nbsp; Aug 2026 – Oct 2026</div><ul>
+<li>Researched candidate profiles across LinkedIn, job portals, and professional platforms to identify relevant information.</li>
+<li>Evaluated and cross-checked profile details against defined criteria, ensuring accuracy and relevance.</li>
+<li>Organized candidate databases by skills, experience, location, and employment details for efficient information retrieval.</li>
+<li>Maintained research records, prepared candidate insights, and coordinated information updates with internal teams.</li>
+</ul></div>
+<div class="entry"><h3>Business Analyst Trainee</h3><div class="meta">Infera &nbsp; | &nbsp; Noida &nbsp; | &nbsp; Oct 2025 – Jan 2026</div><ul>
+<li>Analyzed business requirements and gathered relevant information through discussions with internal stakeholders.</li>
+<li>Structured and maintained project data, reports, and supporting documentation using MS Excel and MS Office.</li>
+<li>Reviewed project information, monitored ongoing activities, and communicated progress updates to support operational efficiency.</li>
+</ul></div></div></section>
+<aside>
+<section class="panel" id="projects"><h2>Projects</h2>
+<div class="project"><div class="ico">♢</div><div><h3>BloodLink</h3><p>Web-based blood donation management system, supporting requirement analysis, documentation, testing, and information management.</p></div></div>
+<div class="project"><div class="ico">◎</div><div><h3>Face Attendance System with Anti-Spoofing</h3><p>Participated in requirement analysis, system testing, documentation, and issue tracking to support system functionality and quality validation.</p></div></div>
+</section>
+<section class="panel" style="margin-top:15px"><h2>Education</h2><div class="project"><div class="ico">⌂</div><div><h3>B.Tech in Computer Science and Engineering</h3><p>United College of Engineering and Research, Prayagraj<br>Oct 2021 – Jul 2025</p></div></div></section>
+</aside>
+</div>
+<section class="content" id="skills"><div class="skills-wrap"><h2>Core Competencies</h2><div class="chips">
+<span class="chip">Web Research</span><span class="chip">Information Verification</span><span class="chip">Data Organization</span><span class="chip">Data Quality Checks</span><span class="chip">Documentation</span><span class="chip">Reporting</span><span class="chip">MS Excel</span><span class="chip">Google Workspace</span><span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">Information Analysis</span><span class="chip">Stakeholder Coordination</span>
+</div></div></section>
+<div class="lower">
+<section class="content" id="certifications"><div class="kicker">Learning & credentials</div><h2 class="section-title">Certifications</h2>
+<div class="mini-panel"><h3>Web Development Internship</h3><p>Prodigy InfoTech</p></div>
+<div class="mini-panel"><h3>Android Application Development (Core Java)</h3><p>NETCAMP</p></div>
+<div class="mini-panel"><h3>Network Management & Web Development</h3><p>NETCAMP</p></div>
+</section>
+<section class="content"><div class="kicker">How I approach research</div><h2 class="section-title">A quality-first workflow</h2>
+<div class="mini-panel"><h3>01 · Discover</h3><p>Identify relevant sources based on the information requirement.</p></div>
+<div class="mini-panel"><h3>02 · Verify & organize</h3><p>Cross-check details, flag inconsistencies, and structure information for retrieval.</p></div>
+<div class="mini-panel"><h3>03 · Document & follow up</h3><p>Prepare clear summaries, maintain records, and coordinate updates with stakeholders.</p></div>
+</section>
+</div>
+<div class="note" style="background:#f4f7fc;border:1px solid var(--line);border-radius:10px;padding:17px;margin:8px 0 24px;font-size:13px;color:#45536a"><b style="color:#14243a">Interest in AlphaSense:</b> I’m interested in how trusted business and financial content—such as company filings, research, news, and expert insights—can be organized and made more useful for decision-makers. My experience in research, information verification, and documentation is a foundation I’m keen to develop further in content operations.</div>
+</div>
+</main>
+<section class="contact" id="contact"><div class="container contact-row">
+<div class="contact-title">Let’s Connect</div>
+<div class="contact-copy">Open to opportunities in content research, data quality, and market intelligence operations.</div>
+<div class="links">
+<a class="contact-link" href="mailto:adarshkumarsingh8480@gmail.com">✉ <span>adarshkumarsingh8480@gmail.com</span> ↗</a>
+<a class="contact-link" href="https://www.linkedin.com/in/adarsh-kumar-singh-92b392224" target="_blank" rel="noopener">in <span>LinkedIn</span> ↗</a>
+<a class="contact-link phone" href="tel:+919794048480">☎ <span>+91-9794048480</span> ↗</a>
+</div>
+</div></section>
+<footer><div class="container">© 2026 Adarsh Singh · Research & Content Analyst Portfolio</div></footer>
+</body></html>
